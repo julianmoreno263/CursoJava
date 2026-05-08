@@ -50,24 +50,47 @@ public class Strings {
 
         //ejercicios
         // 1. Concatena dos cadenas de texto.
+        var string1="Hola amigos";
+        var string2="Estamos estudiando java";
+        System.out.println(string1 + " " + string2);
 
         // 2. Muestra la longitud de una cadena de texto.
+        System.out.println(string1.length());
 
         // 3. Muestra el primer y último carácter de un string.
+        System.out.println(string1.charAt(0));
+        System.out.println(string1.charAt(string1.length()-1));
 
         // 4. Convierte a mayúsculas y minúsculas un string.
+        System.out.println(string1.toUpperCase());
+        System.out.println(string2.toLowerCase());
 
         // 5. Comprueba si una cadena de texto contiene una palabra concreta.
+        System.out.println(string1.contains("amigos"));
 
         // 6. Formatea un string con un entero.
+        var precio=200;
+        System.out.println(String.format("El precio del pc es de $%d pesos",precio));
 
         // 7. Elimina los espacios en blanco al principio y final de un string.
+        var string3="   el perro se llama toby    ";
+        System.out.println(string3.trim());
 
         // 8. Sustituye todos los espacios en blanco de un string por un guión (-).
+        System.out.println("  Hola Julian, como estas?   ".replace(" ", "-"));
 
         // 9. Comprueba si dos strings son iguales.
+        System.out.println(string1.equals((string2)));
 
         // 10. Comprueba si dos strings tienen la misma longitud
+        String str1 = "Hola";
+        String str2 = "Chao";
+
+        if (str1.length() == str2.length()) {
+            System.out.println("Tienen la misma longitud");
+        } else {
+            System.out.println("Tienen longitudes diferentes");
+        }
 
 
 
